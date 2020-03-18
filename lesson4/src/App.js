@@ -1,4 +1,5 @@
 import React from 'react';
+import Car from './Car/Car'
 import './App.css';
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
   }
  return (
       <div style={divStyle}>
-        <h1 style={{color: 'blue', fontSize: '20px'}}>Hello World!</h1>
+        <h1>Hello World!</h1>
+
+        <Car />
       </div>
   );
 }
