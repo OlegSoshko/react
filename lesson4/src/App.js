@@ -10,14 +10,21 @@ class App extends Component{
       {name: 'Audi', year: 2016},
       {name: 'Mazda 1', year: 2010}
     ],
-    pageTitle: 'React components.'
+    pageTitle: 'React components'
   }
 
   changeTitleHandler = () => {
-    console.log('Clicked')
+    
+    const oldTitle = this.state.pageTitle
+    const newTitle = oldTitle + ' (changed)'
+
+    this.setState({
+      pageTitle: newTitle
+    })
   }
 
   render() {
+    console.log('render')
     const divStyle = {
       textAlign: 'center'
     }
