@@ -6,6 +6,5 @@ export default props => (
         <p>
             Yaer: <strong>{props.year}</strong>
         </p>
-        {props.children}
     </div>
 )
